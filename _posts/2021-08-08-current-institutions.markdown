@@ -7,6 +7,8 @@ The crypto world is building [replacements for many of our civilization's instit
 
 I think this is something that I was reluctant to admit to myself. I am definitely not the radical type who says things like "fuck the system." I'm much more of a centrist. I can see that our civilization is in some ways amazingly good, and I generally roll my eyes at angry, ungrateful people (especially the twenty-year-old politically-engaged activist/protester types) who don't understand or appreciate that.
 
+(In particular, I want to say that I am very much not on board with either the socialist/communist "profit is bad" types or the social-justice/political-correctness "America is racist" types. That stuff is just nonsense.)
+
 But still... I have to admit that I don't have a lot of confidence in a lot of our core institutions these days. I think it would be a massive mistake to throw out the baby with the bathwater, but I do have a growing sense of dissatisfaction.
 
   - I don't trust our government. The people who win elections are *not* our best and brightest. And more than that, we've got what Balaji Srinivasan describes as a "51% democracy": at any particular moment, nearly half the citizens hate the government.
