@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Trust in our institutions"
+title:  "Lack of trust in our institutions"
 date:   2021-08-08
 ---
-The crypto world is building [replacements for many of our civilization's institutions](https://adamspitz.github.io/2021/05/14/mundane-uses-of-blockchains.html). Until recently, I didn't really understand why that's something we might want. I want to try to describe this feeling before I get so deep into it that I can't remember what it felt like to be on the outside.
+The crypto world is building [replacements for many of our civilization's institutions](/2021/05/14/mundane-uses-of-blockchains.html). Until recently, I didn't really understand why that's something we might want. I want to try to describe this feeling before I get so deep into it that I can't remember what it felt like to be on the outside.
 
 I think this is something that I was reluctant to admit to myself. I am definitely not the radical type who says things like "fuck the system." I'm much more of a centrist. I can see that our civilization is in some ways amazingly good, and I generally roll my eyes at angry, ungrateful people (especially the twenty-year-old politically-engaged activist/protester types) who don't understand or appreciate that.
 
