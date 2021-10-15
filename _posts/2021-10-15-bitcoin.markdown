@@ -22,6 +22,8 @@ The point of a blockchain is that it's a trustworthy computing platform. That is
 
 Again, this isn't meant as a criticism of Bitcoin in any moral sense; if I understand the history correctly, it took us a while before we realized that general-purpose blockchains were possible. I think there was a period during which people kept spinning up new single-purpose blockchains (e.g. [Namecoin][(https://en.wikipedia.org/wiki/Namecoin)), each one for a particular single application. General-purpose blockchains aren't an *obvious* idea, but they're very clearly the right thing to do in retrospect, and so Bitcoin's inability to support smart contracts is a huge deficiency.
 
+(EDIT: Ironically, Bitcoin's "Taproot" upgrade, which adds some features that should help Bitcoin do smart contracts, just showed up on my radar today. I don't know enough about it yet to know whether Taproot gives Bitcoin full programmability or not. But if it does, that'd be cool.)
+
 ## Less-wasteful consensus mechanisms
 
 Another thing I hear a lot from my friends and family is, "Crypto? Isn't it bad for the environment because it wastes a ton of electricity?"
