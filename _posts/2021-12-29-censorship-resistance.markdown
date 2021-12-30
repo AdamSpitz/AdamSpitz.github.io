@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How can we make censorship-resistance viable?"
+title:  "Is censorship-resistant social-media viable?"
 date:   2021-12-29
 ---
 Whenever a new decentralized-social-media project pops up, one counterargument I keep seeing (e.g. [here](https://www.reddit.com/r/ethereum/comments/reuyix/i_created_a_decentralized_version_of_twitter/hof1vo9/)) is that people are going to clamor for the removal of illegal/sleazy content.
