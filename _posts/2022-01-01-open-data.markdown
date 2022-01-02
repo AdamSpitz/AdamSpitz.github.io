@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Open data"
+date:   2022-01-01
+---
+This has already been discussed plenty, I think, but one of the nice things about storing data in [decentralized, permissionless data storages](https://www.reddit.com/r/Web3SocialMedia/comments/rr8cuw/decentralized_permissionless_data_storages/) is that it decouples the underlying data (e.g. posts, tweets, videos, comments, likes, etc.) from the user interface used to view that data.
+
+If you want to make your own new-and-improved UI, you don't need to start a whole new network.
