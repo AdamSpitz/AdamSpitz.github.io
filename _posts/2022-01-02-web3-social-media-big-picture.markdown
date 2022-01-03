@@ -20,7 +20,7 @@ Increasingly, sites like Twitter and Reddit and Facebook are how we form our opi
   - advertising-based monetization incentivizing unhealthy types of content
   - inability to create other incentivization mechanisms that might foster healthier content
   - centralized orgs (vulnerable to pressure from mobs and authorities, as well as their own biases and agendas) censoring and directing public discourse
-  - shared groups leading to polarization and echo chambers
+  - shared groups leading to [polarization and echo chambers](https://www.reddit.com/r/Web3SocialMedia/comments/rreil8/thoughts_on_reducing_political_polarization/)
 
 My cynical side says that maybe our web2 systems' failure modes are just unavoidable consequences of human nature. I do think there's some truth to that. But... it does kinda seem like it's also partly a consequence of the way those systems are designed. So maybe by improving those systems we can make ourselves collectively smarter (or at least stop making ourselves collectively dumber).
 
