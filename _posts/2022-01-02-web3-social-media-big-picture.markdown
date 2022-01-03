@@ -3,6 +3,10 @@ layout: post
 title:  "Big picture: what might a web3 social-media platform be like?"
 date:   2022-01-02
 ---
+Web3 social-media platforms have the potential to be much better - better for the world, and also just more-pleasant and more-interesting places to live - than our old web2 platforms.
+
+I think that a bunch of the by-now-well-known standard themes of crypto/web3 - decentralization, censorship-resistance, openness, composability ("lego"), ownership (tokens) - might come together to produce something that can avoid the (also by-now-well-known) various types of awfulness than we see in web2 social-media (incentives for unhealthy types of content, lack of incentives for healthier types of content, polarization and echo chambers, etc.).
+
 Putting together a bunch of ideas, here's a first draft of a vision for a web3 social-media platform:
 
   - Content is stored as "open data" in [decentralized, permissionless data storages](https://www.reddit.com/r/Web3SocialMedia/comments/rr8cuw/decentralized_permissionless_data_storages/), rather than in siloed private databases owned by Big Tech companies. This reduces the stranglehold that those centralized companies have over the data, and increases innovation by allowing anyone to create [improved components of the system](/2022/01/01/open-data.html) while still working with the same underlying data.
