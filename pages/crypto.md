@@ -51,7 +51,7 @@ The whole point of a blockchain is that you can look at the code that is actuall
 
 Yes, exactly! The point isn't just that we're expecting those organizations to do dishonest things; the point is that if we want to replace them, we need the replacements to be at least as trustworthy as they are.
 
-
+AAA say more stuff here
 
 
 
@@ -60,7 +60,7 @@ Yes, exactly! The point isn't just that we're expecting those organizations to d
 
 The tech's not done yet.
 
-See my [Crypto Tech FAQ](/pages/crypto-tech-faq/) for more detail, but the bottom line is: cut the devs some slack. Building this stuff isn't easy. There's all sorts of progress being made all the time in many areas; it just takes time. At this point the endgame is in sight, though.
+See my [Crypto Tech FAQ](/pages/crypto-tech/) for more detail, but the bottom line is: cut the devs some slack. Building this stuff isn't easy. There's all sorts of progress being made all the time in many areas; it just takes time. At this point the endgame is in sight, though.
 
 In particular, here are a few (solvable but not easy) technical problems that currently block mainstream adoption:
   - Scalability: Transactions cost dollars; many more apps become viable when transactions cost less than a penny.
