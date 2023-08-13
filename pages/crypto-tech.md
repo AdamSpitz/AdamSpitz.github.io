@@ -18,18 +18,18 @@ In particular, here are some big things that are currently inadequate (but have 
 
 "What do you mean, scalability?"
 
-Right now, Ethereum can do about 12 transactions per second, and each transaction costs dollars (because transactions are basically auctioned off, so the apps that are willing to pay the most get them).
-
-That's good enough for some applications (like some financial ones), but many new applications (social media, gaming, etc.) become viable once we can do thousands or millions of transaction per second at a cost of less than a penny.
+Right now, Ethereum can do about 12 transactions per second, and each transaction is fairly expensive (dollars, not cents), because transactions are basically auctioned off, so the apps that are willing to pay the most get them. That's good enough for some applications (like some financial ones), but many new applications (social media, gaming, etc.) become viable once we can do thousands of transactions per second at a cost of less than a penny.
 
 
 "Why is making a scalable blockchain hard? I mean, Google and Twitter and Facebook and all the other big companies are running these huge web applications with gigantic databases; do you blockchain people just not know how to do that?"
 
 A blockchain has to run on a normal computer affordable to normal people.
 
-The whole point of a blockchain is that you (yes, you personally) can download a piece of software, run it on a normal affordable computer like a laptop or a desktop or a NUC or whatever, and that software will follow along with everything going on on the blockchain and make sure that everything happening is valid (following the rules), plus maybe you want it to participate in running the chain.
+The whole point of a blockchain is that you (yes, you personally) can download a piece of software, run it on a normal affordable computer like a laptop or a desktop, and that software will follow along with everything going on on the blockchain and make sure that everything happening is valid (following the rules), plus maybe you even want it to participate in running the chain.
 
-Ethereum intentionally limits its throughput to a manageable level. In particular, the main bottleneck is storage space. (e.g. If you want to run an Ethereum validator, the recommendation is to have a 2 TB SSD, which is on the high end of normal these days but still affordable. CPU and RAM don't need to be anything special.) Running a blockchain client requires a lot of storage space because you need to be able to follow along with all the new transactions that are happening and make sure that they're all valid, and for that you need to store the entire current state of the chain (which keeps getting bigger and bigger over time). We don't want it to get too big too fast, because then it wouldn't run on ordinary consumer hardware anymore.
+Ethereum intentionally limits its throughput to a manageable level. In particular, the main bottleneck right now is storage space. (e.g. If you want to run an Ethereum validator, the recommendation is to have a 2 TB SSD, which is on the high end of normal these days but still affordable. CPU and RAM don't need to be anything special.) Running a blockchain client requires a lot of storage space because you need to be able to follow along with all the new transactions that are happening and make sure that they're all valid, and for that you need to store the entire current state of the chain (which keeps getting bigger and bigger over time). We don't want it to get too big too fast, because then it wouldn't run on ordinary consumer hardware anymore.
+
+(There are also plans in progress for making "stateless" clients possible, so that you won't even need a large storage in order to fully follow along with verifying the chain; that kind of node ought to run even on a phone.)
 
 
 "Okay, but you've still got lots and lots of people running nodes, right? So doesn't it add up to a whole lot of computing power and storage space?"
@@ -39,15 +39,20 @@ You don't get it. They're all duplicating each other's work. Each of them is ind
 
 "Okay, so how *are* these things going to scale up to running huge numbers of transactions?"
 
-The key insight is that it turns out that it's possible, through clever cryptography and mechanism design, to separate "doing a huge amount of stuff" from "verifying that all that stuff is being done honestly."
+The key insight is that we don't need the massively-decentralized thing to run all the transactions or store all the data; we just need it to *verify* that all the transactions have been run honestly and that all the data is available.
 
-I mean that in two different ways:
-  - Computation: We need to compute the result of running a huge number of transactions. But we can use a type of cryptography called "zero-knowledge proofs" to enable a normal computer to quickly verify that a huge computation (done by some other, untrusted computer) was done honestly. So your node (running on your own little computer) doesn't need to actually run all the transactions; some other more-powerful computer out there can produce a block containing a whole lot of transactions, but do so in such a way that it produces a "validity proof" demonstrating that the answer it gave you really is the correct result of running that huge computation. Then all your computer needs to do is verify that that proof is valid (which it can do quickly and cheaply).
-  - Storage: We need to store, and make available for download, a huge amount of data. But (again, through clever cryptography) we can store that data in a way that's amenable to "data availability sampling", in which your little computer can do a little bit of random sampling to verify that all the data is available. (This doesn't work if you do it the naive way. If a malicious block producer provides *most* of a block but withholds a tiny piece of it, you might randomly sample a few spots, see that they're available, and miss the fact that the tiny piece is missing. But it's possible to transform, say, 1 MB of data into 2 MB of data, *any* 1 MB of which is sufficient to reconstruct the original 1 MB of data. Which means that a malicious data provider would need to withhold at least 50% of the data in order to withhold anything at all. And that's something that you *can* reliably catch using a small amount of random sampling.) (There's more to it than this, but maybe that gives you the flavour of it.)
+The obvious way to verify that all the transactions have been run honestly is to run all the transactions yourself. The obvious way to verify that all the data is available is to download all the data yourself. That's the way blockchains have worked until now.
+
+But it turns out that it's possible, through clever cryptography and mechanism design, to separate "doing it" from "verifying that it was done honestly", for both computation and data-availability:
+
+  - Computation: We need to compute the result of running a huge number of transactions. But there's a type of cryptography called "zero-knowledge proofs" that enables an untrusted computer to run a huge computation in such a way that it produces not only the result of the computation, but also a cheaply-verifiable proof that that result really is the correct result of running that particular computation. So your node (running on your own little computer) doesn't need to actually run all the transactions; it just needs to verify the validity proofs.
+  - Data availability: We need to store, and make available for download, a huge amount of data. But (again, through clever cryptography) we can store that data in a way that's amenable to "data availability sampling", in which your little computer can do a little bit of random sampling to verify that all the data is available. (This doesn't work if you do it the naive way. If a malicious block producer provides *most* of a block but withholds a tiny piece of it, you might randomly sample a few spots, see that they're available, and miss the fact that the tiny piece is missing. But it's possible to transform, say, 1 MB of data into 2 MB of data, *any* 1 MB of which is sufficient to reconstruct the original 1 MB of data. Which means that a malicious data provider would need to withhold at least 50% of the data in order to withhold anything at all. And that's something that you *can* reliably catch using a small amount of random sampling.) (There's more to it than this, but maybe that gives you the flavour of it.)
 
 In practice, what this means is that we split the system into "layers": Ethereum is "layer 1", and then there are lots of "layer 2" blockchains that publish proofs and data to layer 1.
 
-L1 is small but decentralized (i.e. runs on affordable hardware, so many people can run their own node); an L2 can run much larger numbers of transactions because it doesn't need to be nearly so decentralized, because it's publishing proofs to L1 so that L1 can verify that everything the L2 is doing is honest. (It'd almost be fine to just have the L2 running on a single supercomputer. We want more than that just for the sake of liveness - i.e. in case the single supercomputer goes down - but we don't need to worry about the L2's honesty, because no one's going to trust anything the L2 says until it's published to L1 and L1 has verified that it's valid.)
+L1 focuses on being very decentralized, even though that necessitates being low-throughput and hence having expensive transactions; it's not a problem that an L1 transaction is expensive, because a single L1 transaction is used to verify a large number of L2 transactions. (If you're an app developer, you put your app on an L2, not on L1; you don't want your users to have to make L1 transactions directly.)
+
+An L2 doesn't need to be that decentralized, because nobody needs to trust the L2 to do its job honestly, since L1 is verifying everything the L2 says.
 
 
 ## Privacy

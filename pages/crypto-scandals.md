@@ -6,7 +6,31 @@ title: Crypto Scandals, Scams, Hacks, and Just Plain Dumb Ideas
 
 "[You say](/pages/crypto/) that crypto is a good thing, but what about the constant scandals and hacks and collapses I keep hearing about?"
 
-Good question! Let's distinguish between different kinds of bad things, because there are quite a few and they have different causes and solutions:
+You're not wrong.
+
+The crypto world is attempting to:
+  - do something very difficult;
+  - that is intentionally designed to allow people to do anything they want;
+  - with risks that are hard for even experts to understand, let alone laymen;
+  - for very high stakes, both economically and politically.
+
+What that means is:
+  - It's easy for the devs to screw up.
+  - There's no way to stop bad actors from making bad projects and trying to attract suckers.
+  - It's not easy to understand which projects are good ideas and which ones aren't.
+  - There's going to be political opposition.
+
+
+"Yikes. And you still think this is a good idea??"
+
+The potential benefits are worth it, and the risks can be mitigated by *not putting in amounts of money that you cannot afford to lose if you don't understand what you're doing*.
+
+We are still early; in the long run the crypto world has the potential to be a lot safer and healthier than the mainstream system, but we are definitely not there yet.
+
+
+"How exactly do we solve all the bad things?"
+
+Let's distinguish between different kinds of bad things, because there are quite a few and they have different causes and solutions:
 
   - Scams: devs are dishonest
   - Hacks: devs are honest but wrote the code wrong, leaving a hole that a bad guy could came along and steal money
@@ -39,9 +63,9 @@ Older projects that have been around for a while and are battle-tested are usual
 
 Here I'm thinking of Terra/LUNA (though there are plenty of other examples too).
 
-I do think there was some [shady human misconduct](https://en.wikipedia.org/wiki/Do_Kwon) in there, but Terra was also just a really bad idea in the first place, and there were plenty of people who [https://www.youtube.com/watch?v=6eOU5OaKd8s](said so). The problem that eventually caused its demise was predicted by various people in advance; it wasn't a flaw in the code (the code worked the way it was supposed to), it was that its economics were designed in a dumb way. This was something that you could have figured out just by listening to what people had to say about it.
+I hear that there was some [shady human misconduct](https://en.wikipedia.org/wiki/Do_Kwon) going on, but Terra was also just a really bad idea in the first place, and there were plenty of people who [https://www.youtube.com/watch?v=6eOU5OaKd8s](said so). The problem that eventually caused its demise was publically predicted by various people in advance; it wasn't a bug in the code (the code worked the way it was supposed to), it was that its economics were designed in a dumb way. This was something that you could have figured out just by listening to what people had to say about it.
 
-That doesn't mean we say to the people who lost money "it was your own fault"; there were suicides, and a lot of other people who got really badly burned, and that's not something to be flippant about. But that's the fundamental tradeoff with code running on blockchains:
+That doesn't mean we should say "it was your own fault" to the people who lost money; there were suicides, and a lot of other people who got really badly burned, and that's not something to be flippant about. But that's the fundamental tradeoff with code running on blockchains:
 
   - We can't stop anyone from writing whatever applications they want, and we can't stop users from using those applications.
   - But at least the users can see what they're getting into and trust that the code will execute as-written.
@@ -53,8 +77,12 @@ I can't claim to have foreseen Terra's demise; before the crash, I had heard of 
 
 With any sort of "crypto" project, it's important to understand which parts of it are made of code and which parts are made of humans.
 
-e.g. FTX was a normal company run by humans. It was an exchange - that is, a business that enabled its users to trade various kinds of crypto assets (like BTC and ETH and so on). The thing that went wrong with FTX wasn't that there was some sort of flaw in BTC or ETH or whatever; the thing that went wrong with FTX was that the humans running it did shady things that they weren't supposed to be allowed to do (lending out its users' assets).
+For example, FTX (which made headlines as a big "crypto" thingy that collapsed) was a normal company run by humans. It was an exchange - that is, a business that enabled its users to trade various kinds of assets (which just happened to be crypto assets like BTC and ETH and so on). The thing that went wrong with FTX wasn't that there was some sort of flaw in BTC or ETH or whatever; the thing that went wrong with FTX was that the humans running it did shady things that they weren't supposed to do (lending out its users' assets).
 
-This is exactly the problem that crypto *fixes*. For example, contrast FTX with another project called [Uniswap](https://uniswap.org/), which is a *decentralized* exchange - like FTX, it enables its users to trade various kinds of crypto assets, but instead of being made of humans, it is (mostly) made of code. You can look at the code for Uniswap and see that it just *cannot* do the bad thing that FTX did, because there is just nothing in its code that does that.
+This is exactly the problem that crypto *fixes*.
+
+It's useful to contrast FTX with another project called [Uniswap](https://uniswap.org/), which is a *decentralized* exchange - like FTX, it enables its users to trade various kinds of crypto assets, but instead of being made of humans, it is (mostly) made of code. You can look at the code for Uniswap and see that it just *cannot* do the bad thing that FTX did, because there is just nothing in its code that does that.
+
+The high-level vision in the crypto world is that we'd love to keep on replacing more and more organizations-made-of-humans (especially the ones handling important stuff like money) with code that verifiably just does what it's supposed to do. It's also standard advice in the crypto world *not* to leave your assets in the custody of centralized exchanges (like FTX); move your assets to a wallet that you control, and then use decentralized exchanges like Uniswap. FTX wasn't a crypto failure, it was a great example of why we really *need* crypto.
 
 That's the story with most of the scandals the news keeps telling you about.
