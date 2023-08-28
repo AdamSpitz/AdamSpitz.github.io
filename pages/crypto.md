@@ -4,26 +4,21 @@ title: Crypto FAQ For Normal People
 ---
 # Crypto FAQ For Normal People
 
-This FAQ is meant for people who have vaguely heard of crypto, or have maybe heard a bunch of (probably mostly negative) stuff about it in the news, but don't really know much about it.
+This FAQ is meant for people who don't really know much about crypto, but are mildly curious about it. Maybe you've heard a bunch of (probably mostly negative) stuff about it in the news, or maybe you're sympathetic.
 
 
-"Wait, I thought crypto was dead."
-
-Nah.
-
-
-"But isn't crypto just a bunch of scams?"
+"Isn't crypto just a bunch of scams?"
 
 It's like investing in dot-coms back in the 1990s. Tons of bad ideas, but the few good ones changed the world. (For more detail, see my page on [Crypto Scandals, Scams, Hacks, and Just Plain Dumb Ideas](/pages/crypto-scandals/).)
 
 
 "Okay, what exactly is the point of crypto?"
 
-The point of crypto is that we can build stuff where *you can see how something works just by looking at it*, rather than needing to trust any particular company or government or whatever.
-
-(That's an oversimplification; bear with me.)
+The point of crypto (and please bear with me while I oversimplify) is that we can build stuff where *you can see how something works just by looking at it*, rather than needing to trust any particular company or government or whatever.
 
 Trustworthy institutions are in short supply these days; it would be *really really nice* if we had a way to build *transparent* infrastructure.
+
+The question of which *particular* crypto use-case (finance, social media, gaming, science, identity, public-goods, etc.) will give you that "a-ha" moment depends on what stuff you care about and what your political leanings are and what your interests are and so on. But I rarely encounter anyone who doesn't feel like at least *some* of the big powerful organizations (corporations or government institutions or whatever) that run our world are kinda shitty and wow yeah it'd really be kinda nice if we could replace them with some code that does what they're *supposed* to do but in a transparent and trustworthy way.
 
 (Also, with AI coming, this might be hugely important; AI is about to plunge us into a world where we have no idea what we can trust, and crypto's primary purpose is to let us make verifiable things.)
 
@@ -32,7 +27,7 @@ Trustworthy institutions are in short supply these days; it would be *really rea
 
 The point isn't that you, personally, are going to read the code; the point is that *computer nerds who are unaffiliated with the computer nerds who wrote the code* can read the code (to determine whether the code does what its authors say it's supposed to do).
 
-These people are called auditors; projects in the crypto world aren't considered trustworthy if they haven't been audited. (Bugs still slip through, and that's very bad. But still, auditing is a real thing that does actually happen as a routine standard practice.)
+There are no restrictions on who's allowed to do this, but there are professional people who do it, called auditors; projects in the crypto world aren't considered trustworthy if they haven't been audited. (Bugs still slip through, and that's very bad. But still, auditing is a real thing that does actually happen as a routine standard practice.)
 
 
 "So this is about Open Source software?"
@@ -50,7 +45,7 @@ Imagine that Twitter not only said "here's the code that's running on our server
 
 Yes, exactly! Sometimes the main reason why we *like* having some aspect of our society run by a large organization is because at least it's a big established thing with a name to protect and executives who don't want to go to jail, so even if it's kinda shitty for various other reasons, at least it's trustworthy in the most basic sense that it's not going to just outright abscond with our money.
 
-So if we want to replace those kinds of organizations (because they're shitty in whatever way), it'd be nice to have some alternative way of making things that can be trusted in that most basic way.
+So if we want to replace those kinds of organizations (because they're shitty in whatever way), it'd be nice to have some alternative way of making things that can be trusted in that most basic way. That is, crypto opens up possibilities for little guys to be just as trustworthy as big guys; you don't *need* to be a huge stodgy organization in order for the code you write to be trustworthy, because people can just read it and make sure it does what you say it does.
 
 
 "Okay, but I've been hearing about crypto for years now and nothing much has come of it."
@@ -66,7 +61,17 @@ In particular, here are a few (solvable but not easy) technical problems that cu
 
 We're not stumped on what to do about any of these; they all have solutions that are quite close to being ready. But it's taken years to get to this point.
 
-If you roll your eyes when you hear me say "it'll be ready soon", fair enough; let's just wait and see.
+If you roll your eyes when you hear me say "it'll be ready soon", that's a totally fair response from an outsider's point of view. I've been following along closely enough that I can see all sorts of awesome technological development going on; it's very obvious that they're not just stuck. They're making tons of progress, and the roadmap is quite clear at this point.
+
+
+"Isn't crypto all just people hoping to get rich quick?"
+
+Not *all*. But yes, there's a ton of that.
+
+I have three things to say about that:
+  - If your objection is "it's immoral to get rich by being an early investor": no, there's nothing wrong with seeing the potential in these technologies and putting your money where your mouth is.
+  - If your objection is "naive people are going to *try* to get rich quick but end up losing their money; they're basically just gambling": It *is* sad, but I also don't think paternalistic regulation is a good answer, because there really is a lot of amazing potential here (which many investors actually understand a lot *better* than the regulators and politicians) and it's shitty for regulators who don't understand that to be blocking people who do from taking advantage of this opportunity.
+  - If your objection is "I find it distasteful to hang around with people with such crass motivations": there are a *ton* of genuinely wholesome optimistic builders/believers in the crypto space, people who care a lot more about the technology or the societal benefits rather than the asset prices. That's a big part of what I love about it.
 
 
 "I heard crypto is bad for the environment."
@@ -78,33 +83,11 @@ The bad-for-the-environment thing is called "proof of work"; it was the first id
 
 "So you're an Ethereum guy?"
 
-Yeah.
+Basically, yeah.
 
-You really don't want to get sucked into blockchain tribalism if you don't have to. As a layman, the only really important thing to understand is that blockchains are a general-purpose application platform; they're not just about money.
-
-See my [Ethereum versus Other Blockchains](/pages/ethereum-versus/) page for more detail.
+You can go read my [Blockchain Tribalism FAQ](/pages/blockchain-tribalism/) if you want to, but I recommend against it; as a layman, you probably don't want to get sucked into blockchain tribalism. The only really important thing to understand, for the purpose of getting a high-level overview of the space, is that blockchains are a general-purpose application platform; they're not just about money (which means that if you only learn about Bitcoin, you'll get a very limited picture of what this is about).
 
 
 "Are you saying that I should buy ETH?"
 
 No, I am really really not giving you financial advice. The technology has huge potential, but I have no idea whether the price of ETH (or anything else) will go up or down.
-
-
-"Isn't this all just people hoping to get rich quick?"
-
-AAA regulation?
-
-
-
-
-
-There's all sorts of genuinely cool stuff happening in the crypto world; lots of progress on the technical front, lots of people building crypto versions of ordinary things as well as more-iden
-
-
-
-
-"So if I'm used to developing ordinary web apps, I run it on an L2 instead of running servers of my own?"
-
-You can do that - there are general-purpose L2s that are open for anyone to use - but we'll probably also end up seeing lots of app-specific L2s (and even L3s) run by individual companies. e.g. If you're developing a new game or a social-media app or whatever, you may want to write your server-side using one of the various L2 SDKs so that it publishes proofs that your app is doing what you claim it does.
-
-(It's a terrible idea to start a new L1 just for your app, because you have to spin up its security from scratch by getting people to participate in running nodes. But app-specific L2s are a perfectly reasonable idea, if you want to have dedicated servers that are just for your app while still being able to prove to everybody that your app does what you claim it does.)
