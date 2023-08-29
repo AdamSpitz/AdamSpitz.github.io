@@ -22,7 +22,7 @@ In particular, here are some big things that are currently inadequate (but have 
 
 "What do you mean, scalability?"
 
-Right now, Ethereum can do about 12 transactions per second. This means that each transaction is fairly expensive (dollars, not cents), because transactions are basically auctioned off. So the apps that are willing to pay the most get them.
+Right now, Ethereum can do about 16 transactions per second. This means that each transaction is fairly expensive (dollars, not cents), because transactions are basically auctioned off. So the apps that are willing to pay the most get them.
 
 That's good enough for some applications (like some financial ones), but many more applications (social media, gaming, etc.) become viable once we can do thousands of transactions per second at a cost of less than a penny.
 
