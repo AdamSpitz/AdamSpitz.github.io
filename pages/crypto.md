@@ -4,7 +4,7 @@ title: Crypto FAQ For Normal People
 ---
 # Crypto FAQ For Normal People
 
-This FAQ is meant for people who don't really know much about crypto, but are mildly curious about it. Maybe you've heard a bunch of (probably mostly negative) stuff about it in the news, or maybe you're sympathetic.
+This FAQ is meant for people who don't know much about crypto, but are mildly curious about it. Maybe you've heard a bunch of (probably mostly negative) stuff about it in the news, or maybe you're sympathetic.
 
 
 "Isn't crypto just a bunch of scams?"
@@ -36,9 +36,9 @@ Yes, but not *just* that.
 
 If Google or Facebook or Twitter told you, "Here, we're open-sourcing the code that we run on our servers," you could go and read the code that they published, but you'd still have no guarantee that the code that they *say* they're running is the code that they're *actually* running. The whole point of a blockchain is that it adds *that* guarantee.
 
-Imagine that Twitter not only said "here's the code that's running on our servers," but also *made their servers publish proofs* saying "here are all of the user-actions that our servers processed in the past few minutes, and here's the new current state of our database," and we could all run a verifier that quickly checks those proofs to make sure that what they did really is the correct result of running the code that they claimed to be running.
+Imagine that Twitter not only said "here's the code that's running on our servers," but also *made their servers continually publish proofs* saying "here are all of the user-actions that our servers processed in the past N seconds since the previous proof was published, and here's the new current state of our database," and we could all run a verifier that quickly checks those proofs to make sure that what they did really is the correct result of running the code that they claimed to be running.
 
-(That isn't just an analogy; that's exactly what would happen if Twitter ever decided to become a layer2 on top of a layer1 like Ethereum. Twitter would be publishing validity proofs, and you could run an Ethereum node that verifies those proofs. See my [Crypto Tech FAQ](/pages/crypto-tech/) for a bit more detail about the idea of L2s and validity proofs.)
+(That isn't just an analogy; that's exactly what would happen if Twitter ever decided to become a layer2 on top of a layer1 like Ethereum. Twitter would be publishing validity proofs, and everyone running an Ethereum node - including you, if you choose to - would be running a verifier that checks the validity of those proofs. See my [Crypto Tech FAQ](/pages/crypto-tech/) for a bit more detail about the idea of L2s and validity proofs.)
 
 
 "I still don't really see the point. I mean, I don't exactly *love* the Fed or banks or Twitter or video-game companies or whoever, but I don't think that the problem with them is that they don't do what they say they're going to do. I dislike those organizations for different reasons."
